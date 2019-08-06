@@ -1,0 +1,51 @@
+
+
+body {
+	background: #FBB06F;
+	margin: 10%;
+	font-family: Bookman Old Style;
+}
+header {
+	top: 20;
+}
+header h1 {
+	display: inline;
+}
+
+h3 {
+	border-radius: 20px;
+	background: #BE6920;
+	margin: 0;
+	padding: 25px 5px 15px 5px;
+}
+h4 {
+	padding: 0px;
+}
+ul li {
+	padding: 0px;
+}
+p {
+	clear: both;
+}
+
+.navbar{
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background:#F7C769;
+	margin: 0%;
+	border-radius: 0px;
+}
+.navbar ul {
+
+}
+.navbar ul li {
+	border-radius: 20px;
+	list-style-type: none;
+	display: inline-block;
+	background: #BE6920;
+	color: white;
+	padding: 5px 15px;
+	margin: 0%;
+}
