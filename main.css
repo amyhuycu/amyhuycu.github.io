@@ -19,6 +19,7 @@ h3 {
 	border-radius: 20px;
 	background-image: url(greenbackground.jpg);
 	background-size: 100% 100%;
+	box-shadow: 0 0 8px 8px white;
 	margin: 0;
 	padding: 25px 5px 15px 5px;
 }
