@@ -1,20 +1,24 @@
 
 
 body {
-	background: #FBB06F;
+	background-image: url(watercolorbackground.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%;
 	margin: 10%;
 	font-family: Bookman Old Style;
 }
 header {
-	top: 20;
+	top: 60;
 }
 header h1 {
 	display: inline;
+	font-size: 40px;
 }
 
 h3 {
 	border-radius: 20px;
-	background: #BE6920;
+	background-image: url(greenbackground.jpg);
+	background-size: 100% 100%;
 	margin: 0;
 	padding: 25px 5px 15px 5px;
 }
@@ -33,19 +37,30 @@ p {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background:#F7C769;
+	background-image: url(greenbackground.jpg);
+	background-size: 100% 100%;
+	padding: 45px 15px 0px 15px;
 	margin: 0%;
 	border-radius: 0px;
 }
-.navbar ul {
 
+.navbar a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 15px 15px;
+	font-size: 20px;
+}
+.navbar a:hover {
+	background-image: url(yellowgreenbackground.jpg);
+	color: white;
 }
 .navbar ul li {
 	border-radius: 20px;
 	list-style-type: none;
 	display: inline-block;
-	background: #BE6920;
+	background-image: url(yellowgreenbackground.jpg);
 	color: white;
-	padding: 5px 15px;
+	padding: 15px 15px;
 	margin: 0%;
 }
