@@ -12,7 +12,7 @@ header {
 }
 header h1 {
 	display: inline;
-	font-size: 40px;
+	font-size: 50px;
 }
 
 h3 {
@@ -30,6 +30,18 @@ ul li {
 }
 p {
 	clear: both;
+}
+img{
+	border-radius: 50%;
+	float: right;
+}
+
+.center{
+	font-size: 35px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
 
 .navbar{
