@@ -35,14 +35,23 @@ p {
 img{
 	border-radius: 50%;
 	float: right;
+	box-shadow: 0 0 8px 8px white;
 }
 
-.center{
+.welcome{
 	font-size: 35px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
+}
+
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	box-shadow: 0 0 8px 8px white;
 }
 
 .navbar{
