@@ -57,6 +57,13 @@ img{
 	width: 50%;
 }
 
+.gamecontent img{
+	clear:both;
+	border-radius: 0%;
+	float: left;
+	display: flex;
+}
+
 .contactinfo img{
 	clear: both;
 	float: left;
