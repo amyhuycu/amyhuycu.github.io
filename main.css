@@ -110,20 +110,6 @@ img{
 	margin-right: auto;
 }
 
-
-.navbar a {
-	float: left;
-	color: #303040;
-	text-align: center;
-	padding: 15px 15px;
-	font-size: 20px;
-}
-.navbar a:hover {
-	background-image: url(yellowgreenbackground.jpg);
-	color: white;
-	border-radius: 20px 20px 0px 0px;
-}
-
 .navbar{
 	color: #303040;
 	overflow: hidden;
@@ -132,11 +118,28 @@ img{
 	width: 100%;
 	background-image: url(greenbackground.jpg);
 	background-size: 100% 100%;
-	opacity: 0.9;
+	opacity: 0.8;
 	padding: 45px 15px 0px 15px;
 	margin: 0%;
 	border-radius: 0px 0px 0px 20px;
 }
+
+.navbar a {
+	float: left;
+	color: #303040;
+	text-align: center;
+	padding: 15px 15px;
+	font-size: 20px;
+	opacity: 1.0;
+}
+.navbar a:hover {
+	background-image: url(yellowgreenbackground.jpg);
+	color: white;
+	border-radius: 20px 20px 0px 0px;
+	opacity: 1.0;
+}
+
+
 
 footer{
 	color: #798b94;
