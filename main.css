@@ -3,6 +3,7 @@
 body {
 	background-image: url(watercolorbackground.jpg);
 	background-attachment: fixed;
+
 	background-size: 100% 100%;
 	margin: 10%;
 	font-family: Bookman Old Style;
@@ -56,6 +57,13 @@ img{
 	width: 50%;
 }
 
+.contactinfo img{
+	clear: both;
+	float: left;
+	box-shadow: 0 0 8px 8px white;
+	border-radius: 50%;
+}
+
 .center{
 	color: #303040;
 	display: block;
@@ -73,6 +81,7 @@ img{
 	width: 100%;
 	background-image: url(greenbackground.jpg);
 	background-size: 100% 100%;
+	opacity: 0.9;
 	padding: 45px 15px 0px 15px;
 	margin: 0%;
 	border-radius: 0px;
@@ -97,4 +106,9 @@ img{
 	color: white;
 	padding: 15px 15px;
 	margin: 0%;
+}
+
+footer{
+	color: #798b94;
+	float: right;
 }
