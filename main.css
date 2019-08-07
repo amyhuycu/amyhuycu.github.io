@@ -8,14 +8,20 @@ body {
 	font-family: Bookman Old Style;
 }
 header {
+	color: #303040;
 	top: 60;
 }
 header h1 {
+	color: #303040;
 	display: inline;
 	font-size: 50px;
 }
 
+h2{
+	color: #303040;
+}
 h3 {
+	color: #303040;
 	border-radius: 20px;
 	background-image: url(greenbackground.jpg);
 	background-size: 100% 100%;
@@ -24,12 +30,15 @@ h3 {
 	padding: 25px 5px 15px 5px;
 }
 h4 {
+	color: #303040;
 	padding: 0px;
 }
 ul li {
+	color: #303040;
 	padding: 0px;
 }
 p {
+	color: #303040;
 	clear: both;
 }
 img{
@@ -39,6 +48,7 @@ img{
 }
 
 .welcome{
+	color: #303040;
 	font-size: 35px;
 	display: block;
 	margin-left: auto;
@@ -47,6 +57,7 @@ img{
 }
 
 .center{
+	color: #303040;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -55,6 +66,7 @@ img{
 }
 
 .navbar{
+	color: #303040;
 	overflow: hidden;
 	position: fixed;
 	top: 0;
@@ -68,7 +80,7 @@ img{
 
 .navbar a {
 	float: left;
-	color: black;
+	color: #303040;
 	text-align: center;
 	padding: 15px 15px;
 	font-size: 20px;
