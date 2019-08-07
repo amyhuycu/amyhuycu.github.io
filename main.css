@@ -18,6 +18,12 @@ header h1 {
 	font-size: 50px;
 }
 
+header img {
+	clear: both;
+	box-shadow: 0 0 0 0;
+	float: left;
+}
+
 h2{
 	color: #303040;
 }
@@ -42,6 +48,7 @@ p {
 	color: #303040;
 	clear: both;
 }
+
 img{
 	border-radius: 50%;
 	float: right;
@@ -97,6 +104,12 @@ img{
 	box-shadow: 0 0 8px 8px white;
 }
 
+.centerImg{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 .navbar a {
 	float: left;
@@ -108,15 +121,6 @@ img{
 .navbar a:hover {
 	background-image: url(yellowgreenbackground.jpg);
 	color: white;
-}
-.navbar ul li {
-	border-radius: 20px;
-	list-style-type: none;
-	display: inline-block;
-	background-image: url(yellowgreenbackground.jpg);
-	color: white;
-	padding: 15px 15px;
-	margin: 0%;
 }
 
 .navbar{
@@ -133,8 +137,8 @@ img{
 	border-radius: 0px;
 }
 
-
 footer{
 	color: #798b94;
 	float: right;
 }
+
