@@ -121,6 +121,7 @@ img{
 .navbar a:hover {
 	background-image: url(yellowgreenbackground.jpg);
 	color: white;
+	border-radius: 20px 20px 0px 0px;
 }
 
 .navbar{
@@ -134,7 +135,7 @@ img{
 	opacity: 0.9;
 	padding: 45px 15px 0px 15px;
 	margin: 0%;
-	border-radius: 0px;
+	border-radius: 0px 0px 0px 20px;
 }
 
 footer{
