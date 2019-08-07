@@ -69,6 +69,23 @@ img{
 	float: left;
 	box-shadow: 0 0 8px 8px white;
 	border-radius: 50%;
+	opacity: 0.7;
+}
+
+.contactinfo img:hover{
+	opacity: 1.0;
+}
+
+.contactinfofooter {
+	color: #4b555e;
+}
+
+.contactinfofooter img{
+	opacity: 0.7;
+}
+
+.contactinfofooter img:hover{
+	opacity:1.0;
 }
 
 .center{
@@ -80,19 +97,6 @@ img{
 	box-shadow: 0 0 8px 8px white;
 }
 
-.navbar{
-	color: #303040;
-	overflow: hidden;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background-image: url(greenbackground.jpg);
-	background-size: 100% 100%;
-	opacity: 0.9;
-	padding: 45px 15px 0px 15px;
-	margin: 0%;
-	border-radius: 0px;
-}
 
 .navbar a {
 	float: left;
@@ -114,6 +118,21 @@ img{
 	padding: 15px 15px;
 	margin: 0%;
 }
+
+.navbar{
+	color: #303040;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-image: url(greenbackground.jpg);
+	background-size: 100% 100%;
+	opacity: 0.9;
+	padding: 45px 15px 0px 15px;
+	margin: 0%;
+	border-radius: 0px;
+}
+
 
 footer{
 	color: #798b94;
