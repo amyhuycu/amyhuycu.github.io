@@ -1,21 +1,19 @@
 
 
 body {
-	background-image: url(watercolorbackground.jpg);
+	background-image: url(background2.jpg);
+	background-image: url(watercolorbackground2a.jpg);
 	background-attachment: fixed;
-
+	color: #495b75;
+	color: #2b3a4f;
 	background-size: 100% 100%;
 	margin: 10%;
 	font-family: Bookman Old Style;
 }
 header {
 	color: #303040;
+	color: #495b75;
 	top: 60;
-}
-header h1 {
-	color: #303040;
-	display: inline;
-	font-size: 50px;
 }
 
 header img {
@@ -26,9 +24,11 @@ header img {
 
 h2{
 	color: #303040;
+	color: #495b75;
 }
 h3 {
 	color: #303040;
+	color: #495b75;
 	border-radius: 20px;
 	background-image: url(greenbackground.jpg);
 	background-size: 100% 100%;
@@ -38,14 +38,18 @@ h3 {
 }
 h4 {
 	color: #303040;
+	color: #2b3a4f;
 	padding: 0px;
 }
 ul li {
 	color: #303040;
+	color: #495b75;
 	padding: 0px;
 }
 p {
 	color: #303040;
+	color: #495b75;
+	color: #2b3a4f;
 	clear: both;
 }
 
@@ -57,6 +61,8 @@ img{
 
 .welcome{
 	color: #303040;
+	color: #495b75;
+	color: #2b3a4f;
 	font-size: 35px;
 	display: block;
 	margin-left: auto;
@@ -73,14 +79,22 @@ img{
 
 .contactinfo img{
 	clear: both;
-	float: left;
 	box-shadow: 0 0 8px 8px white;
 	border-radius: 50%;
-	opacity: 0.7;
+	opacity: 1.0;
+	display: inline-block;
+}
+.inline-block {
+	display:inline-block;
+	clear: both;
+	box-shadow: 0 0 8px 8px white;
+	border-radius: 50%;
+	opacity: 1.0;
 }
 
 .contactinfo img:hover{
 	opacity: 1.0;
+	transform: scale(1.5, 1.5);
 }
 
 .contactinfofooter {
@@ -88,11 +102,12 @@ img{
 }
 
 .contactinfofooter img{
-	opacity: 0.7;
+	opacity: 1.0;
 }
 
 .contactinfofooter img:hover{
 	opacity:1.0;
+	transform: scale(1.5, 1.5);
 }
 
 .center{
@@ -112,6 +127,8 @@ img{
 
 .navbar{
 	color: #303040;
+	color: #495b75;
+	color: #2b3a4f;
 	overflow: hidden;
 	position: fixed;
 	top: 0;
@@ -128,6 +145,8 @@ img{
 .navbar a {
 	float: left;
 	color: #303040;
+	color: #495b75;
+	color: #2b3a4f;
 	text-align: center;
 	padding: 15px 15px;
 	font-size: 20px;
@@ -139,12 +158,23 @@ img{
 	border-radius: 20px 20px 0px 0px;
 	opacity: 1.0;
 	box-shadow: 0 0 8px 8px white;
+	padding: 15px 15px 15px 15px;
+
 }
-
-
+.active {
+	background-image: url(yellowgreenbackground.jpg);
+	color: white;
+	border-radius: 20px 20px 0px 0px;
+	opacity: 0.8;
+	box-shadow: 0 0 8px 8px white;
+}
 
 footer{
 	color: #798b94;
+	color: #495b75;
 	float: right;
 }
 
+div {
+	transition: width 2s;
+}
