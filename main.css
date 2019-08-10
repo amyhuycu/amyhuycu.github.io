@@ -78,9 +78,13 @@ img{
 	box-shadow: 0 0 8px 8px white;
 	height: 200px;
 	padding: 10px;
-	opacity: 0.7;
+	opacity: 1.0;
 	border-radius: 0%;
 	transition: 0.5s;
+}
+
+.gamecontent:hover img{
+	opacity: 0.5;
 }
 
 .gamecontent img:hover{
@@ -104,6 +108,10 @@ img{
 	opacity: 1.0;
 }
 
+.contactinfo:hover img{
+	opacity: 0.5;
+}
+
 .contactinfo img:hover{
 	opacity: 1.0;
 	transform: scale(1.5, 1.5);
@@ -116,6 +124,10 @@ img{
 .contactinfofooter img{
 	opacity: 1.0;
 	transition: 0.5s;
+}
+
+.contactinfofooter:hover img{
+	opacity: 0.5;
 }
 
 .contactinfofooter img:hover{
@@ -176,11 +188,11 @@ img{
 	padding: 15px 15px 15px 15px;
 
 }
-.active {
+.active{
 	background-image: url(Images/yellowgreenbackground.jpg);
 	color: white;
 	border-radius: 20px 20px 0px 0px;
-	opacity: 0.8;
+	opacity: 1.0;
 	box-shadow: 0 0 8px 8px white;
 }
 
