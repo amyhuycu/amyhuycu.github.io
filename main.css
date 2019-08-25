@@ -54,9 +54,18 @@ p {
 }
 
 img{
+	padding: 0px;
 	border-radius: 50%;
 	float: right;
 	box-shadow: 0 0 8px 8px white;
+}
+
+video{
+	padding: 20px;
+	display: block;
+	margin: 0 auto;
+	float: right;
+	/*box-shadow: 8 8 1px 1px white;*/
 }
 
 .welcome{
@@ -69,6 +78,7 @@ img{
 	margin-right: auto;
 	width: 50%;
 }
+
 .gamecontent{
 	margin: 10px 10px;
 }
