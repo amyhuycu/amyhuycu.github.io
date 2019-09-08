@@ -1,0 +1,206 @@
+<html>
+
+<canvas id = "gameCanvas" width = "800" height = "600"> 
+</canvas>
+
+<script>
+	const SPOT1 = 100;
+	const SPOT2 = 300;
+	const SPOT3 = 500;
+	const SPOT4 = 700;
+
+	var canvas;
+	var canvasContext;
+	var box1 = {position: 1, color: 'green', X: SPOT1};
+	var box2 = {position: 2, color: 'blue', X: SPOT1};
+	var box3 = {position: 3, color: 'red', X: SPOT1};
+	var box4 = {position: 4, color: 'yellow', X: SPOT1};
+	var boxTopPosition = 450;
+
+	var paint = {position: 1, X: SPOT1, Y: 0, color: 'green', speed: 5};
+
+	var playerScore = 0;
+	var highScore = 0;
+	var gameStart = true;
+	var gameOver = false;
+
+	window.onload = function() {
+		canvas = document.getElementById('gameCanvas');
+		canvasContext = canvas.getContext('2d');
+		var framesPerSecond = 30;
+		setInterval(function() {
+			if (!gameStart && !gameOver) {
+				moveEverything();
+			}
+			drawEverything();
+		}, 1000/framesPerSecond);
+		// get keyboard input
+		window.addEventListener('keydown', function(event) {
+			switch (event.keyCode) {
+				case 37:
+					moveLeft();
+					break;
+				case 39:
+					moveRight();
+					break;
+			}	
+		}, true);
+		canvas.addEventListener('mousedown', function(event) {
+			if (gameStart) {
+				gameStart = false;
+				playerScore = 0;
+				highScore = 0;
+				paintReset();
+			}
+			if (gameOver) {
+				playerScore = 0;
+				gameOver = false;
+				paintReset();
+			}
+		}, true);
+	}
+
+	function moveEverything() {
+		paint.Y += paint.speed;
+		if (paint.Y >= boxTopPosition) {
+			// find which box the paint will fall in 
+			var thisSpot = paint.position;
+			var thisSpotColor;
+			if (thisSpot == 1) {
+				thisSpotColor = box1.color;
+			} else if (thisSpot == 2) {
+				thisSpotColor = box2.color;
+			} else if (thisSpot == 3) {
+				thisSpotColor = box3.color;
+			} else {
+				thisSpotColor = box4.color;
+			}
+			// decide if the paint color matches the bucket
+			if (thisSpotColor != paint.color) {
+				gameOver = true;
+				//drawGameOver();
+			} else {
+				playerScore += 1;
+				// update high score
+				if (playerScore > highScore) {
+					highScore = playerScore;
+				}
+			}
+			paintReset();
+		}
+	}
+	function moveLeft() {
+		var temp = box1;
+		box1 = box2;
+		box2 = box3;
+		box3 = box4;
+		box4 = temp;
+	}
+	function moveRight() {
+		var temp = box4;
+		box4 = box3;
+		box3 = box2;
+		box2 = box1;
+		box1 = temp;
+	}
+	function paintReset() {
+		// get new random paint values
+		var newBox = Math.floor((Math.random() * 4) + 1);
+		switch (newBox) {
+			case 1:
+				paint.position = 1;
+				paint.X = SPOT1; 
+				break;
+			case 2:
+				paint.position = 2;
+				paint.X = SPOT2; 
+				break;
+			case 3:
+				paint.position = 3;
+				paint.X = SPOT3;
+				break;
+			case 4:
+				paint.position = 4;
+				paint.X = SPOT4;
+				break;
+		}
+		var newColor = Math.floor((Math.random() * 4) + 1);
+		switch (newColor) {
+			case 1:
+				paint.color = 'green';
+				break;
+			case 2:
+				paint.color = 'blue';
+				break;
+			case 3:
+				paint.color = 'red';
+				break;
+			case 4:
+				paint.color = 'yellow';
+				break;
+		}
+		paint.Y = 0;
+	}
+	function drawEverything() {
+		if (gameStart) {
+			drawGameStart();
+		} else if (gameOver) {
+			drawGameOver();
+		} else {
+			drawBackground();
+			drawBuckets();	
+			drawPaint(paint.X, paint.Y, 15, paint.color); // radius 15
+			drawScore();
+		}
+	}
+	function drawBuckets() {
+		colorBucket(0, boxTopPosition, canvas.width/4, canvas.height / 4, box1.color);
+		colorBucket(canvas.width/4, boxTopPosition, canvas.width/2, canvas.height/4, box2.color);
+		colorBucket(canvas.width/2, boxTopPosition, canvas.width/4, canvas.height / 4, box3.color);
+		colorBucket(canvas.width * 0.75, boxTopPosition, canvas.width/4, canvas.height/4, box4.color);
+	}
+	function colorBucket(leftX, topY, width, height, drawColor) {
+		canvasContext.fillStyle = drawColor;
+		canvasContext.fillRect(leftX, topY, width, height);
+	}
+	function drawPaint(paintX, paintY, radius, paintColor) {
+		canvasContext.fillStyle = paintColor;
+		canvasContext.beginPath();
+
+		canvasContext.arc(paintX, paintY, radius, 0, Math.PI*2, true);
+		canvasContext.fill();
+	}
+	function drawScore() {
+		canvasContext.fillStyle = 'white';
+		canvasContext.fillText("High Score: " + highScore, 600, 70);
+		canvasContext.fillText("Score: " + playerScore, 600, 100);
+	}
+	function drawBackground() {
+		canvasContext.fillStyle = 'black';
+		canvasContext.fillRect(0, 0, canvas.width, canvas.height);
+	}
+	function drawGameStart() {
+		drawBackground();
+		canvasContext.font = "30px Arial";
+		canvasContext.fillStyle = 'white';
+		canvasContext.fillText("Welcome to the Paint Bucket Game!", 170, 200);
+		canvasContext.fillText("Objective: Try to catch the paint balls", 170, 250);
+		canvasContext.fillText("in the correct color paint buckets.", 180, 280);
+		canvasContext.fillText("Use the Left and Right arrow keys", 180, 310);
+		canvasContext.fillText("to move the positions of the buckets.", 180, 340);
+		canvasContext.fillText("Click the mouse to begin.", 180, 370);
+		return;
+	}
+	function drawGameOver() {
+		drawBackground();
+		canvasContext.fillStyle = 'white';
+		canvasContext.fillText("GAMEOVER", 330, 270);
+		canvasContext.fillText("Score: " + playerScore, 330, 300);
+		canvasContext.fillText("High Score: " + highScore, 330, 330);
+		canvasContext.fillText("Click Mouse to Play Again", 240, 380);
+		return;
+	}
+
+</script>
+
+</html>
