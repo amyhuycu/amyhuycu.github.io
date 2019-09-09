@@ -11,13 +11,20 @@
 
 	var canvas;
 	var canvasContext;
-	var box1 = {position: 1, color: 'green', X: SPOT1};
-	var box2 = {position: 2, color: 'blue', X: SPOT1};
-	var box3 = {position: 3, color: 'red', X: SPOT1};
-	var box4 = {position: 4, color: 'yellow', X: SPOT1};
+
+	//pick a color scheme
+	var scheme1 = {one: '#FFFDFE', two:'#F8B0AA', three:'#F78281', four:'#623B76'}; // white, melon, light coral, cybergrape
+	var scheme2 = {one: ' #EC6E45', two: '#FFF5C2', three:'#D3E398', four:'#8DCCC1'}; // orange, blonde, spring bud, pearl aqua
+	var newScheme = Math.floor((Math.random() * 2) + 1);
+	var thisScheme = (newScheme == 1) ? scheme1 : scheme2;
+	
+	var box1 = {position: 1, color: thisScheme.one};
+	var box2 = {position: 2, color: thisScheme.two};
+	var box3 = {position: 3, color: thisScheme.three};
+	var box4 = {position: 4, color: thisScheme.four};
 	var boxTopPosition = 450;
 
-	var paint = {position: 1, X: SPOT1, Y: 0, color: 'green', speed: 5};
+	var paint = {position: 1, X: SPOT1, Y: 0, color: thisScheme.one, speed: 7};
 
 	var playerScore = 0;
 	var highScore = 0;
@@ -50,7 +57,6 @@
 				gameStart = false;
 				playerScore = 0;
 				highScore = 0;
-				paintReset();
 			}
 			if (gameOver) {
 				playerScore = 0;
@@ -127,16 +133,16 @@
 		var newColor = Math.floor((Math.random() * 4) + 1);
 		switch (newColor) {
 			case 1:
-				paint.color = 'green';
+				paint.color = thisScheme.one;
 				break;
 			case 2:
-				paint.color = 'blue';
+				paint.color = thisScheme.two;
 				break;
 			case 3:
-				paint.color = 'red';
+				paint.color = thisScheme.three;
 				break;
 			case 4:
-				paint.color = 'yellow';
+				paint.color = thisScheme.four;
 				break;
 		}
 		paint.Y = 0;
@@ -149,7 +155,7 @@
 		} else {
 			drawBackground();
 			drawBuckets();	
-			drawPaint(paint.X, paint.Y, 15, paint.color); // radius 15
+			drawPaint(paint.X, paint.Y, 25, paint.color); // radius 25
 			drawScore();
 		}
 	}
@@ -172,8 +178,8 @@
 	}
 	function drawScore() {
 		canvasContext.fillStyle = 'white';
-		canvasContext.fillText("High Score: " + highScore, 600, 70);
-		canvasContext.fillText("Score: " + playerScore, 600, 100);
+		canvasContext.fillText("High Score: " + highScore, 550, 70);
+		canvasContext.fillText("Score: " + playerScore, 550, 100);
 	}
 	function drawBackground() {
 		canvasContext.fillStyle = 'black';
