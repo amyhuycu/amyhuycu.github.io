@@ -1,36 +1,57 @@
-
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+@import url("https://fonts.googleapis.com/css?family=Merriweather");
+@import url("https://fonts.googleapis.com/css?family=News+Cycle");
+@import url("https://fonts.googleapis.com/css?family=Cookie");
+@import url("https://fonts.googleapis.com/css?family=Special+Elite");
+@import url("https://fonts.googleapis.com/css?family=Handlee");
+@import url("https://fonts.googleapis.com/css?family=Glegoo");
 
 body {
-	background-image: url(Images/background2.jpg);
+	/*background-image: url(Images/background2.jpg);
 	background-image: url(Images/watercolorbackground2a.jpg);
 	background-attachment: fixed;
-	color: #495b75;
-	color: #2b3a4f;
+	*/
+	background-color: #fbedff; /*light grape*/
+	color: #2b3a4f; /*dark blue*/
+	color: #333333; /*dark charcoal*/
 	background-size: 100% 100%;
 	margin: 10%;
-	font-family: Bookman Old Style;
+	/*font-family: Bookman Old Style;*/
+	/*font-family: "Playfair Display";*/
+	/*font-family: "Merriweather";*/
+	font-family: "Glegoo";
 }
 header {
 	color: #303040;
 	color: #495b75;
 	top: 60;
+	font-family: "Special Elite"; /*News Cycle*/
 }
 
 header img {
 	clear: both;
 	box-shadow: 0 0 0 0;
-	float: left;
 }
-
+h1{
+	font-size: 100px;
+	font-family:"Cookie";
+	color: #623B76; /* Cyber Grape*/
+	text-align: center;
+}
 h2{
 	color: #303040;
 	color: #495b75;
+	text-align: center;
+	font-size: 35px;
 }
 h3 {
 	color: #303040;
 	color: #495b75;
 	border-radius: 20px;
-	background-image: url(Images/greenbackground2.jpg);
+	background-color: #F78281; /* Light Coral*/
+	background-color: #F8B0AA; /* Melon*/
+	/*background-image: url(Images/greenbackground2.jpg);*/
 	background-size: 100% 100%;
 	box-shadow: 0 0 8px 8px white;
 	margin: 0;
@@ -51,9 +72,17 @@ p {
 	color: #495b75;
 	color: #2b3a4f;
 	clear: both;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 img{
+	padding: 0px;
+	border-radius: 50%;
+	box-shadow: 0 0 8px 8px white;
+}
+
+.about img{
 	padding: 0px;
 	border-radius: 50%;
 	float: right;
@@ -77,6 +106,16 @@ video{
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
+	font-family: "Glegoo";
+}
+
+.welcome img{
+	padding: 0px;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	box-shadow: 0 0 8px 8px white;
 }
 
 .gamecontent{
@@ -129,6 +168,9 @@ video{
 
 .contactinfofooter {
 	color: #4b555e;
+	margin: 0 auto;
+	float: right;
+	width: 63%;
 }
 
 .contactinfofooter img{
@@ -155,20 +197,22 @@ video{
 }
 
 .centerImg{
-	display: block;
+	display: inline-block;
 	margin-left: auto;
 	margin-right: auto;
+	float: right;
+	width: 63%;
 }
 
 .navbar{
-	color: #303040;
-	color: #495b75;
-	color: #2b3a4f;
+	color: #623B76; /* Cyber Grape*/
 	overflow: hidden;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background-image: url(Images/greenbackground.jpg);
+	background-color: #F78281; /* Light Coral*/
+	background-color: #F8B0AA; /* Melon*/
+	/*background-image: url(Images/greenbackground.jpg);*/
 	background-size: 100% 100%;
 	opacity: 0.8;
 	padding: 45px 15px 0px 15px;
@@ -182,6 +226,8 @@ video{
 	color: #303040;
 	color: #495b75;
 	color: #2b3a4f;
+	color: #623B76; /* Cyber Grape*/
+	color: #333333; /*dark charcoal*/
 	text-align: center;
 	padding: 15px 15px;
 	font-size: 20px;
@@ -190,7 +236,9 @@ video{
 	transition: 0.5s;
 }
 .navbar a:hover {
-	background-image: url(Images/yellowgreenbackground.jpg);
+	background-color: #F8B0AA; /* Melon*/
+	background-color: #F78281; /* Light Coral*/
+	/*background-image: url(Images/yellowgreenbackground.jpg);*/
 	color: white;
 	
 	opacity: 1.0;
@@ -199,7 +247,9 @@ video{
 
 }
 .active{
-	background-image: url(Images/yellowgreenbackground.jpg);
+	background-color: #F8B0AA; /* Melon*/
+	background-color: #F78281; /* Light Coral*/
+	/*background-image: url(Images/yellowgreenbackground.jpg);*/
 	color: white;
 	border-radius: 20px 20px 0px 0px;
 	opacity: 1.0;
@@ -209,7 +259,7 @@ video{
 footer{
 	color: #798b94;
 	color: #495b75;
-	float: right;
+	text-align: center;
 }
 
 div {
