@@ -24,7 +24,9 @@
 	var box4 = {position: 4, color: thisScheme.four};
 	var boxTopPosition = 450;
 
-	var paint = {position: 1, X: SPOT1, Y: 0, color: thisScheme.one, speed: 7};
+	var paintSpeed = 7;
+	var paintMaxSpeed = 14;
+	var paint = {position: 1, X: SPOT1, Y: 0, color: thisScheme.one, speed: paintSpeed};
 
 	var playerScore = 0;
 	var highScore = 0;
@@ -67,7 +69,10 @@
 	}
 
 	function moveEverything() {
-		paint.Y += paint.speed;
+		if (playerScore > 0 && playerScore % 5 == 0 && paintSpeed <= paintMaxSpeed) {
+			paintSpeed += 0.01;
+		}
+		paint.Y += paintSpeed;
 		if (paint.Y >= boxTopPosition) {
 			// find which box the paint will fall in 
 			var thisSpot = paint.position;
