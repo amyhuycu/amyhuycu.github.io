@@ -14,9 +14,15 @@
 
 	//pick a color scheme
 	var scheme1 = {one: '#FFFDFE', two:'#F8B0AA', three:'#F78281', four:'#623B76'}; // white, melon, light coral, cybergrape
-	var scheme2 = {one: ' #EC6E45', two: '#FFF5C2', three:'#D3E398', four:'#8DCCC1'}; // orange, blonde, spring bud, pearl aqua
-	var newScheme = Math.floor((Math.random() * 2) + 1);
-	var thisScheme = (newScheme == 1) ? scheme1 : scheme2;
+	var scheme2 = {one: '#EC6E45', two: '#FFF5C2', three:'#D3E398', four:'#8DCCC1'}; // orange, blonde, spring bud, pearl aqua
+	var scheme3 = {one: '#3C4179', two: '#E5DDEE', three: '#A97EE1', four: '#F6635B'}; // americanblue, platinum, rebeccapurple, sunsetorange
+	var scheme4 = {one: '#8C87CD', two: '#FFFFFF', three: '#FFDF8F', four: '#61E064'}; // ube, white, flavescent, pastelgreen
+	var newSchemeA = Math.floor((Math.random() * 2) + 1);
+	var schemeAColor = (newSchemeA == 1) ? scheme1 : scheme2;
+	var newSchemeB = Math.floor((Math.random() * 2) + 1);
+	var schemeBColor = (newSchemeB == 1) ? scheme3 : scheme4;
+	var newSchemeC = Math.floor((Math.random() * 2) + 1);
+	var thisScheme = (newSchemeC == 1) ? schemeAColor : schemeBColor;
 	
 	var box1 = {position: 1, color: thisScheme.one};
 	var box2 = {position: 2, color: thisScheme.two};
