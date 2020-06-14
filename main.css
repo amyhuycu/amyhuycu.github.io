@@ -39,7 +39,7 @@ h1{
 	color: #623B76; /* Cyber Grape*/
 	text-align: center;
 }
-
+/*
 a{
 	color: #623B76;
 }
@@ -47,6 +47,7 @@ a{
 a:hover {
 	color: #623B76;
 }
+*/
 h2{
 	color: #303040;
 	color: #495b75;
@@ -58,7 +59,8 @@ h3 {
 	color: #495b75;
 	border-radius: 20px;
 	background-color: #F78281; /* Light Coral*/
-	background-color: #F8B0AA; /* Melon*/
+	/*background-color: #F8B0AA; /* Melon*/
+	color: white;
 	/*background-image: url(Images/greenbackground2.jpg);*/
 	background-size: 100% 100%;
 	box-shadow: 0 0 8px 8px white;
@@ -82,6 +84,11 @@ p {
 	clear: both;
 	margin-left: 10px;
 	margin-right: 10px;
+}
+
+.blogheader {
+	font-size: 30px;
+	font-weight: bold;
 }
 
 img{
@@ -148,6 +155,78 @@ video{
 	opacity: 1.0;
 	transform: scale(1.1);
 }
+
+
+
+.sidenav {
+  /*height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 20%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  /*z-index: 0.5; /* Stay on top */
+  top: 0; /* Stay at the top */
+  /*left: 0;*/
+  right: 0;
+  background-color: #F78281; /* Light Coral*/
+  /*overflow-x: hidden; /* Disable horizontal scroll */
+  /*padding-top: 20px;*/
+  border-radius : 20%;
+
+  margin-top: 10%;
+  /*margin-bottom: 5%;*/
+}
+
+.sidenav img{
+	margin-left: 0%;
+	width: 20%;
+	border-radius: 0%
+}
+
+.LI-profile-badge {
+	margin-left: 15%;
+	margin-top: 15%;
+	/*margin-bottom: 15%;
+	margin-right: 15%;
+	width: 20%;
+	border-radius: 5%;*/
+}
+
+
+.collapsible {
+  /*background-color: #777;*/
+  background-color: #F78281; /* Light Coral*/
+  background-color: #F8B0AA; /* Melon*/
+
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 20px 20px 20px 20px;
+
+	font-family: "Glegoo";
+}
+
+.collapsible:hover {
+	background-color: #F78281; /* Light Coral*/
+	transition: 0.5s;
+	box-shadow: 0 0 8px 8px white;
+
+}
+.collapsecontent {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.maincontent{
+	margin-right: 20%;
+}
+
 .contactinfo img{
 	clear: both;
 	box-shadow: 0 0 8px 8px white;
@@ -211,6 +290,8 @@ video{
 	width: 63%;
 }
 
+
+
 .navbar{
 	color: #623B76; /* Cyber Grape*/
 	overflow: hidden;
@@ -219,12 +300,15 @@ video{
 	width: 100%;
 	background-color: #F78281; /* Light Coral*/
 	background-color: #F8B0AA; /* Melon*/
+	
+
 	/*background-image: url(Images/greenbackground.jpg);*/
 	background-size: 100% 100%;
 	opacity: 0.8;
 	padding: 45px 15px 0px 15px;
-	margin: 0%;
+	/*margin: 0%;*/
 	border-radius: 0px 0px 0px 20px;
+	margin-right: 360px;
 	box-shadow: 0 0 8px 8px white;
 }
 
@@ -244,7 +328,9 @@ video{
 }
 .navbar a:hover {
 	background-color: #F8B0AA; /* Melon*/
+	
 	background-color: #F78281; /* Light Coral*/
+	
 	/*background-image: url(Images/yellowgreenbackground.jpg);*/
 	color: white;
 	
