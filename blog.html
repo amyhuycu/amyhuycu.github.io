@@ -26,8 +26,14 @@
 	<p>
 		<h2> BLOG </h2>
 	</p>
-		<p>
-		
+		<!--
+		<button type="button" class="btn btn-link" onclick="manageEntry()">Entry 1</button>
+		-->
+		<button type="button" class="btn btn-primary btn-block" onclick="manageEntry()">Entry1</button>
+		<div id = "blogEntry">
+			Entry 1: June 08 2020
+			 - Coming Soon
+		</div>
 		<br>
 			
 		<p>
@@ -62,3 +68,16 @@
 		<footer><br><br> &copy; 2020 AmyCu </footer>
 	</body>
 </html>
+
+
+
+<script>
+	function manageEntry() {
+		  var x = document.getElementById("blogEntry");
+		  if (x.style.display === "none") {
+		    x.style.display = "block";
+		  } else {
+		    x.style.display = "none";
+		  }
+	}
+</script>
