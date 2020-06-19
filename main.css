@@ -7,26 +7,37 @@
 @import url("https://fonts.googleapis.com/css?family=Handlee");
 @import url("https://fonts.googleapis.com/css?family=Glegoo");
 
+:root {
+	--global-navBarColor : #F8B0AA; /* Melon*/
+	--global-navBarLight : #f7c1bc; /* light Melon*/
+	--global-selectedColor : #F78281; /* Light Coral*/
+	--global-backgroundColor : #fbedff; /*light grape*/
+	--global-backgroundWhite: #f1f1f1; /*light white gray*/
+	--global-titleColor : #623B76; /* Cyber Grape*/
+	--global-textColorLight : white;
+	--global-textColorDark : #333333; /*dark charcoal*/
+	--global-textColorBlack : #2b3a4f; /* dark navy */
+
+	--global-titleFont: "Cookie";
+	--global-navBarFont: "Special Elite";
+	--global-bodyFont: "Glegoo";
+}
+
+
 body {
-	/*background-image: url(Images/background2.jpg);
-	background-image: url(Images/watercolorbackground2a.jpg);
-	background-attachment: fixed;
-	*/
-	background-color: #fbedff; /*light grape*/
-	color: #2b3a4f; /*dark blue*/
-	color: #333333; /*dark charcoal*/
+	background-color: var(--global-backgroundColor);
+	color: var(--global-textColorDark);
 	background-size: 100% 100%;
 	margin: 10%;
 	/*font-family: Bookman Old Style;*/
 	/*font-family: "Playfair Display";*/
 	/*font-family: "Merriweather";*/
-	font-family: "Glegoo";
+	font-family: var(--global-bodyFont);
 }
 header {
-	color: #303040;
-	color: #495b75;
+	color: var(--global-textColorDark);
 	top: 60;
-	font-family: "Special Elite"; /*News Cycle*/
+	font-family: var(--global-navBarFont);
 }
 
 header img {
@@ -35,52 +46,43 @@ header img {
 }
 h1{
 	font-size: 100px;
-	font-family:"Cookie";
-	color: #623B76; /* Cyber Grape*/
+	font-family: var(--global-titleFont);
+	color: var(--global-titleColor);
 	text-align: center;
 }
 
-a{
-	color: #623B76;
+a{	
+	color: var(--global-titleColor);
 }
 
 a:hover {
-	color: #623B76;
+	color: var(--global-titleColor);
 }
 
 h2{
-	color: #303040;
-	color: #495b75;
+	color: var(--global-textColorBlack);
 	text-align: center;
 	font-size: 35px;
 }
 h3 {
-	color: #303040;
-	color: #495b75;
 	border-radius: 20px;
-	background-color: #F78281; /* Light Coral*/
-	/*background-color: #F8B0AA; /* Melon*/
+	background-color: var(--global-selectedColor);
 	color: white;
-	/*background-image: url(Images/greenbackground2.jpg);*/
 	background-size: 100% 100%;
 	box-shadow: 0 0 8px 8px white;
 	margin: 0;
 	padding: 15px 5px 10px 5px;
 }
 h4 {
-	color: #303040;
-	color: #2b3a4f;
+	color: var(--global-textColorBlack);
 	padding: 0px;
 }
 ul li {
-	color: #303040;
-	color: #495b75;
+	color: var(--global-textColorBlack);
 	padding: 0px;
 }
 p {
-	color: #303040;
-	color: #495b75;
-	color: #2b3a4f;
+	color: var(--global-textColorBlack);
 	clear: both;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -113,15 +115,13 @@ video{
 }
 
 .welcome{
-	color: #303040;
-	color: #495b75;
-	color: #2b3a4f;
+	color: var(--global-textColorBlack);
 	font-size: 35px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
-	font-family: "Glegoo";
+	font-family: var(--global-bodyFont);
 }
 
 .welcome img{
@@ -166,13 +166,10 @@ video{
   top: 0; /* Stay at the top */
   /*left: 0;*/
   right: 0;
-  background-color: #F78281; /* Light Coral*/
-  /*overflow-x: hidden; /* Disable horizontal scroll */
-  /*padding-top: 20px;*/
+  background-color: var(--global-selectedColor);
   border-radius : 20%;
 
   margin-top: 10%;
-  /*margin-bottom: 5%;*/
 }
 
 .sidenav img{
@@ -184,18 +181,11 @@ video{
 .LI-profile-badge {
 	margin-left: 15%;
 	margin-top: 15%;
-	/*margin-bottom: 15%;
-	margin-right: 15%;
-	width: 20%;
-	border-radius: 5%;*/
 }
 
 
 .collapsible {
-  /*background-color: #777;*/
-  background-color: #F78281; /* Light Coral*/
-  background-color: #F8B0AA; /* Melon*/
-  background-color: #f7c1bc; /* light Melon*/
+  background-color: var(--global-navBarLight);
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -206,11 +196,11 @@ video{
   font-size: 15px;
   border-radius: 20px 20px 20px 20px;
 
-	font-family: "Glegoo";
+  font-family: var(--global-bodyFont);
 }
 
 .collapsible:hover {
-	background-color: #F78281; /* Light Coral*/
+	background-color: var(--global-selectedColor);
 	transition: 0.5s;
 	box-shadow: 0 0 8px 8px white;
 
@@ -220,7 +210,7 @@ video{
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: var(--globalBackgroundWhite);
 }
 
 .contactinfo img{
@@ -249,7 +239,7 @@ video{
 }
 
 .contactinfofooter {
-	color: #4b555e;
+	color: var(--global-textColorBlack);
 	margin: 0 auto;
 	float: right;
 	width: 63%;
@@ -270,7 +260,7 @@ video{
 }
 
 .center{
-	color: #303040;
+	color: var(--global-textColorBlack);
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -289,16 +279,13 @@ video{
 
 
 .navbar{
-	color: #623B76; /* Cyber Grape*/
+	color: var(--global-titleColor);
 	overflow: hidden;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background-color: #F78281; /* Light Coral*/
-	background-color: #F8B0AA; /* Melon*/
+	background-color: var(--global-navBarColor);
 	
-
-	/*background-image: url(Images/greenbackground.jpg);*/
 	background-size: 100% 100%;
 	opacity: 0.8;
 	padding: 45px 15px 0px 15px;
@@ -310,11 +297,7 @@ video{
 
 .navbar a {
 	float: left;
-	color: #303040;
-	color: #495b75;
-	color: #2b3a4f;
-	color: #623B76; /* Cyber Grape*/
-	color: #333333; /*dark charcoal*/
+	color: var(--global-textColorBlack);
 	text-align: center;
 	padding: 15px 15px;
 	font-size: 20px;
@@ -323,11 +306,7 @@ video{
 	transition: 0.5s;
 }
 .navbar a:hover {
-	background-color: #F8B0AA; /* Melon*/
-	
-	background-color: #F78281; /* Light Coral*/
-	
-	/*background-image: url(Images/yellowgreenbackground.jpg);*/
+	background-color: var(--global-selectedColor);
 	color: white;
 	
 	opacity: 1.0;
@@ -336,9 +315,7 @@ video{
 
 }
 .active{
-	background-color: #F8B0AA; /* Melon*/
-	background-color: #F78281; /* Light Coral*/
-	/*background-image: url(Images/yellowgreenbackground.jpg);*/
+	background-color: var(--global-selectedColor);
 	color: white;
 	border-radius: 20px 20px 0px 0px;
 	opacity: 1.0;
@@ -346,8 +323,7 @@ video{
 }
 
 footer{
-	color: #798b94;
-	color: #495b75;
+	color: var(--global-textColorBlack);
 	text-align: center;
 }
 
