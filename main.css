@@ -7,13 +7,16 @@
 @import url("https://fonts.googleapis.com/css?family=Handlee");
 @import url("https://fonts.googleapis.com/css?family=Glegoo");
 
+/* THEME 1 */
 :root {
 	--global-navBarColor : #F8B0AA; /* Melon*/
 	--global-navBarLight : #f7c1bc; /* light Melon*/
-	--global-selectedColor : #F78281; /* Light Coral*/
-	--global-backgroundColor : #fbedff; /*light grape*/
-	--global-backgroundWhite: #f1f1f1; /*light white gray*/
+	--global-selectedColor : #F78281; /* Coral*/
+
 	--global-titleColor : #623B76; /* Cyber Grape*/
+	--global-backgroundColor : #fbedff; /*light grape*/
+
+	--global-backgroundWhite: #f1f1f1; /*light white gray*/
 	--global-textColorLight : white;
 	--global-textColorDark : #333333; /*dark charcoal*/
 	--global-textColorBlack : #2b3a4f; /* dark navy */
@@ -22,6 +25,27 @@
 	--global-navBarFont: "Special Elite";
 	--global-bodyFont: "Glegoo";
 }
+
+/* THEME 2 */
+:root {
+	--global-navBarColor: #86d9d6; /*dark celeste */
+	--global-navBarLight : #c0fdfb; /* celeste*/
+	--global-navBarLight: #a4dedc; /*dark celeste */
+	--global-selectedColor : #64b6ac; /* green sheen*/
+
+	--global-titleColor : #5d737e; /* cadet*/
+	--global-backgroundColor : #daffef; /* aero blue */
+
+	--global-backgroundWhite: #f1f1f1; /*light white gray*/
+	--global-textColorLight : white;
+	--global-textColorDark : #333333; /*dark charcoal*/
+	--global-textColorBlack : #2b3a4f; /* dark navy */
+
+	--global-titleFont: "Cookie";
+	--global-navBarFont: "Special Elite";
+	--global-bodyFont: "Glegoo";
+}
+
 
 
 body {
@@ -210,7 +234,7 @@ video{
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: var(--globalBackgroundWhite);
+  background-color: var(--global-backgroundWhite);
 }
 
 .contactinfo img{
