@@ -1,8 +1,6 @@
 <!doctype html>
 <html>
 <head>
-		<!--<link rel="shortcut icon" type="image/x-icon" href=
-		"www.url.com/favicon.ico" />-->
 		<title>Amy Cu | Blog</title>	
 		<link href="main.css" rel="stylesheet" type="text/css"/>
 	</head>
@@ -92,6 +90,19 @@
 		</div>
 		<br>
 
+
+		<button class="collapsible">
+			<strong><u>Entry 2: TBA</u></strong> <br>
+		</button>
+		<div class="collapsecontent">
+			<br>
+			<div class="blogheader">TBA</div>
+			Coming Soon
+			<br>
+		</div>
+		<br>
+
+
 		<p>
 			<br>
 			<br>
@@ -108,15 +119,7 @@
 				<a href="https://amyhuycu.github.io" target="_blank"><img src="Images/websiteimg.svg" width=50></a>
 			</div>
 
-			<!--
-			<h3><u>Contact Information: </u><br></h3>
 			
-			<strong><em>Email address:</em></strong> amycu@ucdavis.edu<br>
-			<strong><em>LinkedIn:</em></strong> <a href="http://www.linkedin.com/in/amyhcu">www.linkedin.com/in/amyhcu</a><br>
-			<strong><em>GitHub:</em></strong> <a href="http://www.github.com/amyhuycu">www.github.com/amyhuycu</a><br>
-			<strong><em>Facebook:</em></strong> <a href="https://www.facebook.com/amyhuycu">www.facebook.com/amyhuycu</a><br>
-			<strong><em>Website:</em></strong> <a href="https://amyhuycu.github.io">amyhuycu.github.io</a><br>
-			-->
 			
 			<br>
 			<br>
@@ -128,19 +131,19 @@
 
 
 
-		<script>
-			var coll = document.getElementsByClassName("collapsible");
-			var i;
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
 
-			for (i = 0; i < coll.length; i++) {
-			  coll[i].addEventListener("click", function() {
-			    this.classList.toggle("active");
-			    var content = this.nextElementSibling;
-			    if (content.style.maxHeight){
-			      content.style.maxHeight = null;
-			    } else {
-			      content.style.maxHeight = content.scrollHeight + "px";
-			    } 
-			  });
-			}
-		</script>
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+	    this.classList.toggle("active");
+	    var content = this.nextElementSibling;
+	    if (content.style.maxHeight){
+	      content.style.maxHeight = null;
+	    } else {
+	      content.style.maxHeight = content.scrollHeight + "px";
+	    } 
+	  });
+	}
+</script>
