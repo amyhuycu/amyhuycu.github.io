@@ -83,6 +83,14 @@ a:hover {
 	color: var(--global-titleColor);
 }
 
+button a{
+	color: white;
+}
+
+button a:hover {
+	color: var(--global-titleColor);
+}
+
 h2{
 	color: var(--global-textColorBlack);
 	text-align: center;
