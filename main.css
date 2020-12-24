@@ -125,6 +125,12 @@ p {
 	font-weight: bold;
 }
 
+.blogsubheader {
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
 img{
 	padding: 0px;
 	border-radius: 50%;
