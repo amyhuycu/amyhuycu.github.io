@@ -7,24 +7,7 @@
 @import url("https://fonts.googleapis.com/css?family=Handlee");
 @import url("https://fonts.googleapis.com/css?family=Glegoo");
 
-/* THEME 1 */
-:root {
-	--global-navBarColor : #F8B0AA; /* Melon*/
-	--global-navBarLight : #f7c1bc; /* light Melon*/
-	--global-selectedColor : #F78281; /* Coral*/
 
-	--global-titleColor : #623B76; /* Cyber Grape*/
-	--global-backgroundColor : #fbedff; /*light grape*/
-
-	--global-backgroundWhite: #f1f1f1; /*light white gray*/
-	--global-textColorLight : white;
-	--global-textColorDark : #333333; /*dark charcoal*/
-	--global-textColorBlack : #2b3a4f; /* dark navy */
-
-	--global-titleFont: "Cookie";
-	--global-navBarFont: "Special Elite";
-	--global-bodyFont: "Glegoo";
-}
 
 /* THEME 2 */
 :root {
@@ -45,7 +28,24 @@
 	--global-navBarFont: "Special Elite";
 	--global-bodyFont: "Glegoo";
 }
+/* THEME 1 */
+:root {
+	--global-navBarColor : #F8B0AA; /* Melon*/
+	--global-navBarLight : #f7c1bc; /* light Melon*/
+	--global-selectedColor : #F78281; /* Coral*/
 
+	--global-titleColor : #623B76; /* Cyber Grape*/
+	--global-backgroundColor : #fbedff; /*light grape*/
+
+	--global-backgroundWhite: #f1f1f1; /*light white gray*/
+	--global-textColorLight : white;
+	--global-textColorDark : #333333; /*dark charcoal*/
+	--global-textColorBlack : #2b3a4f; /* dark navy */
+
+	--global-titleFont: "Cookie";
+	--global-navBarFont: "Special Elite";
+	--global-bodyFont: "Glegoo";
+}
 
 
 body {
