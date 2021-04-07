@@ -278,9 +278,9 @@ video{
 
 .contactinfofooter {
 	color: var(--global-textColorBlack);
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	float: right;
-	width: 63%;
+	width: 60%;
 }
 
 .contactinfofooter img{
