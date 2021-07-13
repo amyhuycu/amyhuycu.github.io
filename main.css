@@ -47,27 +47,67 @@
 	--global-bodyFont: "Glegoo";
 }
 
+header {
+	color: var(--global-textColorDark);
+	font-family: var(--global-navBarFont);
+}
+
+/* Entire navigation bar. */
+.navbar{
+	color: var(--global-titleColor);
+	background-color: var(--global-navBarColor);
+
+	/* Keeps the navigation bar at the top of the page. */
+	position: fixed; 
+	top: 0;
+	
+	/* Extends the navigation bar across the width of the page. */
+	width: 100%;
+	
+	/* Opacity, padding, shadow effects. */
+	opacity: 0.8;
+	padding: 45px 15px 0px 15px;
+	box-shadow: 0 0 8px 8px white;
+	/* border-radius: 0px 0px 0px 20px; */
+}
+
+/* Each page button in navigation bar. */
+.navbar a {
+	color: var(--global-textColorBlack);
+
+	/* Items float left and centered text. */
+	float: left;
+	text-align: center;
+	padding: 15px 15px;
+	font-size: 20px;
+	/* Only top border is curved. */
+	border-radius: 20px 20px 0px 0px;
+	
+	/* Opacity and transition settings. */
+	opacity: 1.0;
+	transition: 0.5s;
+}
+
+/* Mouse hover over page button in navigation bar. */
+.navbar a:hover {
+	background-color: var(--global-selectedColor);
+	color: white;
+	
+	opacity: 1.0;
+	box-shadow: 0 0 8px 8px white;
+}
 
 body {
 	background-color: var(--global-backgroundColor);
 	color: var(--global-textColorDark);
 	background-size: 100% 100%;
-	margin: 10%;
+	/* margin: 10%; */
 	/*font-family: Bookman Old Style;*/
 	/*font-family: "Playfair Display";*/
 	/*font-family: "Merriweather";*/
 	font-family: var(--global-bodyFont);
 }
-header {
-	color: var(--global-textColorDark);
-	top: 60;
-	font-family: var(--global-navBarFont);
-}
 
-header img {
-	clear: both;
-	box-shadow: 0 0 0 0;
-}
 h1{
 	font-size: 100px;
 	font-family: var(--global-titleFont);
@@ -315,43 +355,6 @@ video{
 }
 
 
-
-.navbar{
-	color: var(--global-titleColor);
-	overflow: hidden;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background-color: var(--global-navBarColor);
-	
-	background-size: 100% 100%;
-	opacity: 0.8;
-	padding: 45px 15px 0px 15px;
-	/*margin: 0%;*/
-	border-radius: 0px 0px 0px 20px;
-	margin-right: 360px;
-	box-shadow: 0 0 8px 8px white;
-}
-
-.navbar a {
-	float: left;
-	color: var(--global-textColorBlack);
-	text-align: center;
-	padding: 15px 15px;
-	font-size: 20px;
-	opacity: 1.0;
-	border-radius: 20px 20px 0px 0px;
-	transition: 0.5s;
-}
-.navbar a:hover {
-	background-color: var(--global-selectedColor);
-	color: white;
-	
-	opacity: 1.0;
-	box-shadow: 0 0 8px 8px white;
-	padding: 15px 15px 15px 15px;
-
-}
 .active{
 	background-color: var(--global-selectedColor);
 	color: white;
