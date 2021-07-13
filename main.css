@@ -141,62 +141,70 @@ h2{
 	font-size: 35px;
 }
 
+/* Title of subheader on page. Ie Resume subheaders, Project names, etc. */
 h3 {
-	border-radius: 20px;
 	background-color: var(--global-selectedColor);
 	color: white;
-	background-size: 100% 100%;
+
+	/* Features of box surrounding the subheader. */
 	box-shadow: 0 0 8px 8px white;
-	margin: 0;
+	border-radius: 20px;
 	padding: 15px 5px 10px 5px;
+	margin: 0;
 }
+
+/* Subsections under page subheaders. Currently only on Resume > Skills > Languages / Tools. */
 h4 {
 	color: var(--global-textColorBlack);
 	padding: 0px;
 }
+
+/* Items in lists. Used in Resume page. */
 ul li {
 	color: var(--global-textColorBlack);
 	padding: 0px;
 }
+
+/*   I don't think this is currently doing anything. :) 
 p {
 	color: var(--global-textColorBlack);
 	clear: both;
 	margin-left: 10px;
 	margin-right: 10px;
 }
+*/
 
+/* Blog Entry title within the blog post. NOT the Entry / Date button. */
 .blogheader {
 	font-size: 30px;
 	font-weight: bold;
 }
 
+/* Subheaders within the blog entry. */
 .blogsubheader {
 	font-size: 20px;
 	font-weight: bold;
 	text-decoration: underline;
 }
 
+/* Images have a white box shadow. */
 img{
 	padding: 0px;
 	border-radius: 50%;
 	box-shadow: 0 0 8px 8px white;
 }
 
-.about img{
-	padding: 0px;
-	border-radius: 50%;
-	float: right;
-	box-shadow: 0 0 8px 8px white;
-}
 
-video{
-	padding: 20px;
-	display: block;
-	margin: 0 auto;
-	float: right;
-	/*box-shadow: 8 8 1px 1px white;*/
-}
 
+/* ============================== */
+/* === SPECIFIC PAGE STYLING ==== */
+/* ============================== */
+
+/* ========================== */
+/* === HOME PAGE STYLING ==== */
+/* ========================== */
+
+/* FIXME: Specific styling for the Home page content. */
 .welcome{
 	color: var(--global-textColorBlack);
 	font-size: 35px;
@@ -207,6 +215,7 @@ video{
 	font-family: var(--global-bodyFont);
 }
 
+/* FIXME: Specific styling for the Image on the Home page. */
 .welcome img{
 	padding: 0px;
 	border-radius: 50%;
@@ -216,10 +225,29 @@ video{
 	box-shadow: 0 0 8px 8px white;
 }
 
+
+/* =========================== */
+/* === ABOUT PAGE STYLING ==== */
+/* =========================== */
+
+/* FIXME: Styling specifically for image in About page. */
+.about img{
+	padding: 0px;
+	border-radius: 50%;
+	float: right;
+	box-shadow: 0 0 8px 8px white;
+}
+
+/* ============================== */
+/* === PROJECTS PAGE STYLING ==== */
+/* ============================== */
+
+/* Stores images for projects. */
 .gamecontent{
 	margin: 10px 10px;
 }
 
+/* Styling for project images. */
 .gamecontent img{
 	float: left;
 	box-shadow: 0 0 8px 8px white;
@@ -230,15 +258,30 @@ video{
 	transition: 0.5s;
 }
 
+/* Mouse hovering over an image makes all other images clouded over. */
 .gamecontent:hover img{
 	opacity: 0.5;
 }
 
+/* Mouse hovering over an image makes it grow larger. */
 .gamecontent img:hover{
 	opacity: 1.0;
 	transform: scale(1.1);
 }
 
+
+/* FIXME: Create a Youtube Link for this video. Specific styling for Fruit Field Game. */
+video{
+	padding: 20px;
+	display: block;
+	margin: 0 auto;
+	float: right;
+	/*box-shadow: 8 8 1px 1px white;*/
+}
+
+/* ========================= */
+/* === END PAGE STYLING ==== */
+/* ========================= */
 
 
 .sidenav {
