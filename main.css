@@ -50,6 +50,7 @@
 header {
 	color: var(--global-textColorDark);
 	font-family: var(--global-navBarFont);
+	/* margin: 0%; */
 }
 
 /* Entire navigation bar. */
@@ -97,45 +98,49 @@ header {
 	box-shadow: 0 0 8px 8px white;
 }
 
+/* Main content. Should not affect navigation bar in header. */
 body {
 	background-color: var(--global-backgroundColor);
 	color: var(--global-textColorDark);
-	background-size: 100% 100%;
-	/* margin: 10%; */
-	/*font-family: Bookman Old Style;*/
-	/*font-family: "Playfair Display";*/
-	/*font-family: "Merriweather";*/
 	font-family: var(--global-bodyFont);
+	/* margin: 10%; */
 }
 
+/* Main website title: Amy Cu */
 h1{
-	font-size: 100px;
 	font-family: var(--global-titleFont);
 	color: var(--global-titleColor);
+	font-size: 100px;
 	text-align: center;
 }
 
+/* Contains hyperlink to any element. */
 a{	
 	color: var(--global-titleColor);
 }
 
+/* Change color of text if mouse hovers over hyperlink. */
 a:hover {
 	color: var(--global-titleColor);
 }
 
+/* Clickable button. */
 button a{
 	color: white;
 }
 
+/* Change color of text if mouse hovers over a button. */
 button a:hover {
 	color: var(--global-titleColor);
 }
 
+/* Title of current page: Home, About, Resume, Contact, etc. */
 h2{
 	color: var(--global-textColorBlack);
 	text-align: center;
 	font-size: 35px;
 }
+
 h3 {
 	border-radius: 20px;
 	background-color: var(--global-selectedColor);
