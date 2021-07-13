@@ -98,6 +98,15 @@ header {
 	box-shadow: 0 0 8px 8px white;
 }
 
+/* Labels the currently active page in the navigation bar. */
+.active{
+	background-color: var(--global-selectedColor);
+	color: white;
+	border-radius: 20px 20px 0px 0px;
+	opacity: 1.0;
+	box-shadow: 0 0 8px 8px white;
+}
+
 /* Main content. Should not affect navigation bar in header. */
 body {
 	background-color: var(--global-backgroundColor);
@@ -269,7 +278,6 @@ img{
 	transform: scale(1.1);
 }
 
-
 /* FIXME: Create a Youtube Link for this video. Specific styling for Fruit Field Game. */
 video{
 	padding: 20px;
@@ -279,143 +287,104 @@ video{
 	/*box-shadow: 8 8 1px 1px white;*/
 }
 
-/* ========================= */
-/* === END PAGE STYLING ==== */
-/* ========================= */
+/* ============================= */
+/* === CONTACT PAGE STYLING ==== */
+/* ============================= */
 
-
-.sidenav {
-  /*height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 20%; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  /*z-index: 0.5; /* Stay on top */
-  top: 0; /* Stay at the top */
-  /*left: 0;*/
-  right: 0;
-  background-color: var(--global-selectedColor);
-  border-radius : 20%;
-
-  margin-top: 10%;
-}
-
-.sidenav img{
-	margin-left: 0%;
-	width: 20%;
-	border-radius: 0%
-}
-
-.LI-profile-badge {
-	margin-left: 15%;
-	margin-top: 15%;
-}
-
-
-.collapsible {
-  background-color: var(--global-navBarLight);
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  border-radius: 20px 20px 20px 20px;
-
-  font-family: var(--global-bodyFont);
-}
-
-.collapsible:hover {
-	background-color: var(--global-selectedColor);
-	transition: 0.5s;
-	box-shadow: 0 0 8px 8px white;
-
-}
-.collapsecontent {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: var(--global-backgroundWhite);
-}
-
+/* Social Media Images. */
 .contactinfo img{
-	clear: both;
 	box-shadow: 0 0 8px 8px white;
 	border-radius: 50%;
 	opacity: 1.0;
-	display: inline-block;
 	transition: 0.5s;
 }
-.inline-block {
-	display:inline-block;
-	clear: both;
-	box-shadow: 0 0 8px 8px white;
-	border-radius: 50%;
-	opacity: 1.0;
-}
 
+/* Mouse hover over an icon makes all others clouded over. */
 .contactinfo:hover img{
 	opacity: 0.5;
 }
 
+/* Mouse hover over an icon makes it grow larger. */
 .contactinfo img:hover{
 	opacity: 1.0;
 	transform: scale(1.5, 1.5);
 }
 
+/* ========================= */
+/* === END PAGE STYLING ==== */
+/* ========================= */
+
+/* Button denoting collapsible content under "collapsecontent" class. */
+.collapsible {
+  font-family: var(--global-bodyFont);
+  background-color: var(--global-navBarLight);
+  color: white;
+
+  text-align: left;
+  font-size: 15px;
+
+  border-radius: 20px 20px 20px 20px;
+  padding: 18px;
+  width: 100%;
+
+  /* No border around button. */
+  border: none;
+  
+  cursor: pointer;
+}
+
+/* Change color of collapsible button when hovered over. */
+.collapsible:hover {
+	background-color: var(--global-selectedColor);
+	transition: 0.5s;
+	box-shadow: 0 0 8px 8px white;
+}
+
+/* Contains content to be hidden / activated by collapse button. */
+.collapsecontent {
+  background-color: var(--global-backgroundWhite);
+  padding: 0 18px;
+  
+  transition: max-height 0.2s ease-out;
+  /* Fits all content within block. */
+  overflow: hidden;
+  /* Initializes as unclicked collapse buttons / hidden collapsible content. */
+  max-height: 0;
+}
+
+/* Specific styling for inline-block. Currently used for Contact social media images. */
+.inline-block {
+	display:inline-block;
+	box-shadow: 0 0 8px 8px white;
+	border-radius: 50%;
+	opacity: 1.0;
+}
+
+/* Contact info at bottom of each page. */
 .contactinfofooter {
-	color: var(--global-textColorBlack);
-	/*margin: 0 auto;*/
 	float: right;
 	width: 60%;
 }
 
+/* Styling for images at contact info footer. */
 .contactinfofooter img{
 	opacity: 1.0;
 	transition: 0.5s;
 }
 
+/* Mouse hover over an icon makes all others clouded over. */
 .contactinfofooter:hover img{
 	opacity: 0.5;
 }
 
+/* Mouse hover over an icon makes it grow larger. */
 .contactinfofooter img:hover{
 	opacity:1.0;
 	transform: scale(1.5, 1.5);
 }
 
-.center{
-	color: var(--global-textColorBlack);
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-	box-shadow: 0 0 8px 8px white;
-}
-
-.centerImg{
-	display: inline-block;
-	margin-left: auto;
-	margin-right: auto;
-	float: right;
-	width: 63%;
-}
-
-
-.active{
-	background-color: var(--global-selectedColor);
-	color: white;
-	border-radius: 20px 20px 0px 0px;
-	opacity: 1.0;
-	box-shadow: 0 0 8px 8px white;
-}
-
+/* Footer contains copyright, year, name. */
 footer{
 	color: var(--global-textColorBlack);
 	text-align: center;
-}
-
-div {
-	transition: width 2s;
 }
