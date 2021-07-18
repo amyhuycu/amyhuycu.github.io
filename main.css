@@ -75,7 +75,10 @@ body {
 header {
 	color: var(--global-textColorDark);
 	font-family: var(--global-navBarFont);
-	/* margin: 0%; */
+}
+
+.websiteTitle {
+	margin: 15% 10% 10% 10%;
 }
 
 /* Entire navigation bar. */
@@ -132,11 +135,12 @@ header {
 	box-shadow: 0 0 8px 8px white;
 }
 
+
 /* Main content. Should not affect navigation bar in header. */
 .bodycontent {
 	color: var(--global-textColorDark);
 	font-family: var(--global-bodyFont);
-	margin: 15% 10%;
+	margin: 10%;
 }
 
 /* Main website title: Amy Cu */
