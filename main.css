@@ -390,8 +390,11 @@ video{
 
 /* Contact info at bottom of each page. */
 .contactinfofooter {
-	float: right;
+	font-family: var(--global-bodyFont);
+	/* margin: auto; */
+	text-align: center;
 	width: 60%;
+	
 }
 
 /* Styling for images at contact info footer. */
