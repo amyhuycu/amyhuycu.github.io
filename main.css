@@ -224,13 +224,19 @@ p {
 	text-decoration: underline;
 }
 
-/* Images have a white box shadow. 
-img {
-	padding: 0px;
-	border-radius: 50%;
-	box-shadow: 0 0 8px 8px white;
+/* Images have a white box shadow. */
+.RoundImg {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
-*/
+
+.SquareImg {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .RoundImg img{
 	padding: 0px;
 	border-radius: 50%;
