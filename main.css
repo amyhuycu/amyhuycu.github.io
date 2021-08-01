@@ -224,10 +224,21 @@ p {
 	text-decoration: underline;
 }
 
-/* Images have a white box shadow. */
-img{
+/* Images have a white box shadow. 
+img {
 	padding: 0px;
 	border-radius: 50%;
+	box-shadow: 0 0 8px 8px white;
+}
+*/
+.RoundImg img{
+	padding: 0px;
+	border-radius: 50%;
+	box-shadow: 0 0 8px 8px white;
+}
+
+.SquareImg img{
+	padding: 0px;
 	box-shadow: 0 0 8px 8px white;
 }
 
